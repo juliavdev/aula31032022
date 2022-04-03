@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style-cadastro.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="/index.html">Escolarium</a>
+            <ul class="nav-list">
+                <li><a href="area-login.html">Área de membros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-video">
+            <video autoplay muted loop>
+                <source src="video/video-institucional.mp4" type="video/mp4">
+            </video>
+            
+            <div class="container-login">
+                <form action="resposta.php" method="post">
+                    <label for="nome">
+                        <span>Nome</span>
+                        <input type="text" id="nome" name="nome">
+                    </label>
+
+                    <label for="data-nascimento">
+                        <span>Data de Nascimento</span>
+                        <input type="date" id="data-nascimento" name="data-nascimento">
+                    </label>
+
+                    <label for="email">
+                        <span>Email</span>
+                        <input type="email" id="email" name="email">
+                    </label>
+
+                    <label for="matricula">
+                        <span>Matrícula</span>
+                        <input type="text" id="matricula" name="matricula">
+                    </label>
+
+                    <label for="senha">
+                        <span>Senha</span>
+                        <input type="password" id="senha" name="senha">
+                    </label>
+        
+                    <input id="cadastro" type="submit" value="Cadastrar">
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+</html>
